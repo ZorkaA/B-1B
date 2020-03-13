@@ -57,7 +57,7 @@ more to come :-)
 	</nasal>
   
   <offsets>
-	  <x-m>25.0</x-m><!-- was 25 -->
+	  <x-m>25</x-m><!-- was 25 -->
 	  <y-m>0.0</y-m>
           <z-m>0.0</z-m><!-- was 0.24 -->
     <pitch-deg>0</pitch-deg>
@@ -3695,7 +3695,20 @@ more to come :-)
 	<object-name>window_right_side</object-name>
 	<object-name>window_left_aft</object-name>
 	<object-name>window_right_aft</object-name>
-</animation>
+</animation> 
 
+<animation>
+        <name>refuel</name>
+        <object-name>Refueling_screen</object-name>
+        <type>material</type>
+        <condition>
+          <property>systems/refuel/contact</property> 
+        </condition>
+        <emission>
+            <red>0</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+    </animation>
 
 </PropertyList>

@@ -304,7 +304,10 @@ B-1B set file.
       </electrical>
       <autopilot>
         <path>Aircraft/B-1B/Systems/b1b-autopilot.xml</path>
-      </autopilot>
+      </autopilot> 
+      <property-rule n="998">
+        <path>Aircraft/B-1B/Systems/B1b-filters.xml</path>
+      </property-rule> 
     </systems>
 
   <rendering>
@@ -727,9 +730,12 @@ B-1B set file.
 
 
 <nasal>
+
+            
+ 
 	<b1b>
 		<file>Aircraft/B-1B/Nasal/b1b.nas</file>
-		<file>Aircraft/B-1B/Nasal/cdu900.nas</file>
+		<file>Aircraft/B-1B/Nasal/cdu900.nas</file> 
 	</b1b>	
 	<flightcontrols>
 		<file>Aircraft/B-1B/Nasal/flightcontrols.nas</file>

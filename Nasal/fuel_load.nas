@@ -19,5 +19,5 @@ if ((wow == 1) and (roll < 1)) {
 } else {
     var ltext = "You have to stop at an airport to be able to onload fuel!";
     screen.log.write(ltext);
-  }
+    } 
 }

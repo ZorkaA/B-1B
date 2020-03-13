@@ -109,4 +109,20 @@ setprop("sim/hud/visibility[1]", 1);
 } else {
 setprop("sim/hud/visibility[1]", 0);
 }
-},0,0);
+},0,0);  
+
+var freqDigits = func{
+    var freq = getprop("B1b/airspeed-indicator/filter"); 
+    var a = int((freq*10-int(freq*10))*10);
+    var b = int((freq*1-int(freq*1))*10);
+    var c = int((freq*0.1-int(freq*0.1))*10);
+    var d = int((freq*0.01-int(freq*0.01))*10);
+    var e = int((freq*0.001-int(freq*0.001))*10); 
+    setprop("B1b/airspeed-indicator/digit-1", a);
+    setprop("B1b/airspeed-indicator/digit-2", b);
+    setprop("B1b/airspeed-indicator/digit-3", c);
+    setprop("B1b/airspeed-indicator/digit-4", d);
+    setprop("B1b/airspeed-indicator/digit-5", e);
+    settimer(freqDigits, 0.2);
+}
+freqDigits();
