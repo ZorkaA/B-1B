@@ -59,7 +59,7 @@ sweat by maggse
   
   <type type="string">number-value</type>
   <property type="string">instrumentation/cdu900/line2</property>
-  <factor type="double">1.0</factor> <!-- optional, used to scale the propertie's value -->
+   <!-- optional, used to scale the propertie's value -->
   <offset type="double">0.0</offset> <!-- optional, used to shift the propertie's value -->
   <format type="string">%5.2lf</format> <!-- the printf() format to display the value -->
   <truncate type="bool">false</truncate> <!-- set to true to truncate to an integer value -->
